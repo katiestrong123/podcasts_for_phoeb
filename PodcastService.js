@@ -5,7 +5,7 @@ export const getPodcasts = () =>{
     .then(res => res.json())
 }
  
-export const postPodcast = (payload) => {
+export const updateDbPodcast = (payload) => {
     return fetch(baseURL, {
         method: 'POST',
         body: JSON.stringify(payload),
